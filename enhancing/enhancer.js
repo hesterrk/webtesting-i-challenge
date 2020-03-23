@@ -39,12 +39,10 @@ function fail(item) {
 function repair(item) {
   const dur = item.durability;
 
-  if(dur < 100) {
-  return { ...item, durability: item.durability + 100 }
-  }
-
-  else {
-    return false
+  if (dur < 100) {
+    return { ...item, durability: item.durability + 100 };
+  } else {
+    return false;
   }
 }
 

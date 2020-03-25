@@ -52,7 +52,7 @@ function get(item) {
   const enhancement = item.enhancement;
 
   if (enhancement !== 0) {
-    return { ...item, name: `[+ ${enhancement}] ${enhancement.name}` };
+    return { ...item, name: `[+ ${enhancement}] ${item.name}` };
   } else {
     return item;
   }
